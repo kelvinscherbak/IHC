@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <title>Exercicio IHC</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-size: 13px;
+                border: 1px solid;  
+                background-color: whitesmoke;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJQR_RtTybxTyZw1PSh7mLgxw4rnD4Cmwu-FGcgavInRkby2Eq);
+                background-repeat: no-repeat;   
+            }
+            p{
+                text-indent: 15%;
+                text-align: left;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 style="text-align: center; color: tomato;">
+                 EXERCICIO INTERAÇÃO HUMANO COMPUTADOR - KELVIN
+        </h1>
+        <form>
+            <h2>
+                <pre>
+                <br>
+                    Nome: <input type="" name="nome" autofocus autocomplete="name" placeholder="Nome Completo"> <br>
+                    Sexo: <select name="Sexo" id="Sexo" title= "Selecione o seu sexo" accesskey="s">
+                        <option value="seçeco" accesskey="1">Selecione</option> 
+                        <option value="M" accesskey="m">Masculino</option> 
+                        <option value="F" accesskey="f">Feminino</option>
+                    </select><br>
+                    Qual sua cor preferida?: <input type="color" value="#ffffff" name="corpreferida" title="Qual sua cor preferida?" accesskey="c"><br>
+                    Quantidade de colunas: <input type="number" name="qntcolunas" title="Quantidade de colunas" placeholder="Somente numeros" accesskey="i"><br>
+                    Email: <input type="email" name="email" autocomplete="email" title="Informe seu email" placeholder="Seuemail@email.com" accesskey="e"><br>
+                    Senha: <input type="password" name="senha" title="Informe sua senha" placeholder="Sua senha aqui" accesskey="p"><br>
+                    Confirmação de Senha: <input type="password" name="csenha" title="confirme sua senha" placeholder="Confirmação de senha" accesskey="´"><br>
+                    Data de hoje:       <input type="datetime-local" name="datahoje"title="selecione a data de hoje" accesskey="d">
+                    
+                    <input type="submit" value="Salvar" onclick="msg()" title="Clique para salvar"> <input type="reset" value="Limpar campos" title="Clique para limpar os campos">
+
+                <div>
+                    <article>Artigo de texto</article>
+                </div>
+                </pre>
+                <script>
+                    function msg(){
+                       
+                        alert("Salvo com sucesso!");
+                    }
+                </script>
+            </h2>
+        </form>
+    </body>
+
+</html>
