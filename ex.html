@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt_br">
     <head>
+	<meta charset="UTF-8" />
         <title>Exercicio IHC</title>
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <style>
             body{
                 font-size: 13px;
                 border: 1px solid;  
+                text-indent: : 3px;
                 background-color: whitesmoke;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJQR_RtTybxTyZw1PSh7mLgxw4rnD4Cmwu-FGcgavInRkby2Eq);
                 background-repeat: no-repeat;   
             }
-            p{
-                text-indent: 15%;
-                text-align: left;
+            h3{
+                text-indent: : 3px;
             }
 
         </style>
@@ -24,36 +25,49 @@
                  EXERCICIO INTERAÇÃO HUMANO COMPUTADOR - KELVIN
         </h1>
         <form>
-            <h2>
-                <pre>
-                <br>
-                    Nome: <input type="" name="nome" autofocus autocomplete="name" placeholder="Nome Completo"> <br>
-                    Sexo: <select name="Sexo" id="Sexo" title= "Selecione o seu sexo" accesskey="s">
-                        <option value="seçeco" accesskey="1">Selecione</option> 
+            <br><br><br><br><br><br><br><br>
+            <h3> 
+                <br><br>
+                    <label for= nome>Nome:</label>
+                    <input type="" name="nome" autofocus autocomplete="name" placeholder="Nome Completo"><br>
+                    <label for= sexo>Sexo:</label> 
+                     <select name="Sexo" id="Sexo" title= "Selecione o seu sexo" accesskey="s">
+                        <option value="selec" accesskey="1">Selecione</option>
                         <option value="M" accesskey="m">Masculino</option> 
                         <option value="F" accesskey="f">Feminino</option>
                     </select><br>
-                    Qual sua cor preferida?: <input type="color" value="#ffffff" name="corpreferida" title="Qual sua cor preferida?" accesskey="c"><br>
-                    Quantidade de colunas: <input type="number" name="qntcolunas" title="Quantidade de colunas" placeholder="Somente numeros" accesskey="i"><br>
-                    Email: <input type="email" name="email" autocomplete="email" title="Informe seu email" placeholder="Seuemail@email.com" accesskey="e"><br>
-                    Senha: <input type="password" name="senha" title="Informe sua senha" placeholder="Sua senha aqui" accesskey="p"><br>
-                    Confirmação de Senha: <input type="password" name="csenha" title="confirme sua senha" placeholder="Confirmação de senha" accesskey="´"><br>
-                    Data de hoje:       <input type="datetime-local" name="datahoje"title="selecione a data de hoje" accesskey="d">
-                    
-                    <input type="submit" value="Salvar" onclick="msg()" title="Clique para salvar"> <input type="reset" value="Limpar campos" title="Clique para limpar os campos">
+                    <label for= cor>Cor da interface</label>
+                    <input type="color" value="#ffffff" name="corpreferida" title="Qual sua cor preferida?" accesskey="c"><br>
+                    <label for= qntcolunas>Quantidade de colunas</label>
+                    <input type="number" name="qntcolunas" title="Quantidade de colunas" placeholder="Somente numeros" accesskey="i"><br>
+                    <label for= email>Email</label>
+                    <input type="email" name="email" autocomplete="email" title="Informe seu email" placeholder="Seuemail@email.com" accesskey="e"><br>
+                    <label for= senha>Senha</label>
+                    <input type="password" name="senha" title="Informe sua senha" placeholder="Sua senha aqui" accesskey="p"><br>
+                    <label for= csenha>Confirmação de Senha</label>
+                    <input type="password" name="csenha" title="confirme sua senha" placeholder="Confirmação de senha" accesskey="x"><br>
+                    <label for= data >Data</label>
+                    <input type="date" name="data"title="selecione a data de hoje" accesskey="t">
+                    <label for= hora>Hora</label>
+                    <input type="time" name="hora" id="hora" Title="Selecione a hora" accesskey="h">
 
-                <div>
-                    <article>Artigo de texto</article>
-                </div>
+                                            <input type="submit" value="Salvar" onclick="msg()" title="Clique para salvar "class="btn btn-primary"> 
+                                            <input type="reset" value="Limpar campos" title="Clique para limpar os campos "class="btn btn-danger">
+					<button class="btn btn-success"><a target="_blank" href='snake.html' >jogin cobrinha</a></button>
                 </pre>
                 <script>
                     function msg(){
+
                        
                         alert("Salvo com sucesso!");
                     }
                 </script>
-            </h2>
+            </h3>
         </form>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
     </body>
 
 </html>
